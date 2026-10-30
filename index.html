@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>숏충이 업로더 — Shot Auto Trade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;
+         background:#0f1115; color:#e8ecf2; }
+  main { max-width:720px; margin:0 auto; padding:64px 24px 96px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  h2 { font-size:1.15rem; margin:40px 0 12px; color:#ffd84d; }
+  p, li { color:#c3cbd8; }
+  a { color:#6fa8ff; }
+  .lede { font-size:1.05rem; color:#9aa5b5; margin-bottom:40px; }
+  nav { margin-top:48px; padding-top:24px; border-top:1px solid #262c38; }
+  nav a { margin-right:20px; }
+  code { background:#1a2029; padding:2px 6px; border-radius:5px; font-size:.9em; }
+</style>
+</head>
+<body><main>
+  <h1>숏충이 업로더</h1>
+  <p class="lede">개인이 직접 만든 자동매매 봇의 매매 기록을 영상으로 만들어,
+  <strong>운영자 본인의 유튜브 채널</strong>에 업로드하는 개인용 도구입니다.</p>
+
+  <h2>무엇을 하는 프로그램인가</h2>
+  <p>바이비트(Bybit) 선물 계좌에서 자동매매 봇이 체결한 내역을 12시간마다 모아
+  세로형 영상으로 렌더링하고, YouTube Data API v3 를 통해 운영자 본인의 채널에 올립니다.
+  운영자 한 사람이 자신의 계정으로만 사용합니다.</p>
+
+  <h2>Google 계정 데이터를 어떻게 쓰나</h2>
+  <ul>
+    <li>요청하는 권한은 <code>youtube.upload</code>(영상 업로드)와
+        <code>youtube.readonly</code>(채널 정보 확인) 두 가지뿐입니다.</li>
+    <li>발급받은 토큰은 운영자의 개인 컴퓨터에만 저장되며, 외부로 전송하지 않습니다.</li>
+    <li>영상 업로드 외의 목적으로 사용하지 않고, 누구에게도 제공하거나 판매하지 않습니다.</li>
+  </ul>
+
+  <h2>이 영상은 투자 권유가 아닙니다</h2>
+  <p>공개되는 매매 기록은 실제 계좌의 과거 결과일 뿐이며, 미래 수익을 보장하지 않습니다.
+  레버리지 거래는 원금 전액 손실이 가능합니다.</p>
+
+  <nav>
+    <a href="./privacy.html">개인정보처리방침</a>
+    <a href="./terms.html">이용약관</a>
+  </nav>
+</main></body></html>
